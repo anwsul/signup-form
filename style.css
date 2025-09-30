@@ -1,0 +1,59 @@
+@font-face {
+    font-family: "norse-bold";
+    src: url('./Norse-Bold.otf');
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+img {
+    display: block; /* inline items add some space after them. I don't want that */
+}
+
+a {
+    color: white;
+}
+
+.container{
+    display: flex;
+}
+
+.left-side {
+    position: relative;
+}
+
+.leaves-image {
+    height: 100vh;
+}
+
+.odin-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 30vh;
+
+}
+
+.leaves-image-link {
+    width: 100%;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 20px;
+}
+
+.odin-logo {
+    width: 100px;
+}
+
+.odin-logo-container > p {
+    font-family: "norse-bold";
+    font-size: 80px;
+    color: white;
+}
