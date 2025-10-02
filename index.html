@@ -8,6 +8,7 @@
 </head>
 <body>
     <div class="container">
+
         <!-- left side -->
         <div class="left-side">
             <img src="background-image.jpg" alt="green leaf plant in close up photography" class="leaves-image">
@@ -15,37 +16,60 @@
                 <img  src="odin-lined.png" alt="Logo of the odin project" class="odin-logo">
                 <p>odin</p>
             </div>
-            <p class="leaves-image-link">Photo by <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+            <p class="leaves-image-link">Photo by <a href="https://unsplash.com/@haliewestphoto" target="_blank">Halie West</a> on <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
         </div>
 
         <!-- right side -->
         <div class="right-side">
-            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em>to get started</p>
-            <p>You <em>know</em> you want to.</p>
+            <div class="call-to-action">
+                <h3>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started</h3>
+                <br>
+                <h3>You <em>know</em> you want to.</h3>
+            </div>
 
-            <p>Let's do this!</p>
 
-            <form>
-                <label for="first-name">FIRST NAME</label>
-                <input type="text">
-                <label for="last-name">LAST NAME</label>
-                <input type="text">
-                <label for="EMAIL">LAST NAME</label>
-                <input type="email">
-                <label for="phone-number">LAST NAME</label>
-                <input type="number" pattern="">
-                <label for="password">PASSWORD</label>
-                <input type="password">
-                <label for="password">CONFIRM PASSWORD</label>
-                <input type="password">
-                <button>Create Account</button>
+            <form id="signup-form">
+                <h3>Let's do this!</h3>
+
+                <div>
+                    <label>
+                        FIRST NAME
+                        <input type="text" required>
+                    </label>
+                    <label>
+                        LAST NAME
+                        <input type="text" required>
+                    </label>
+                </div>
+
+                <div>
+                    <label>
+                        EMAIL 
+                        <input type="email" required>
+                    </label>
+                    <label>
+                        PHONE NUMBER
+                        <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    </label>
+                </div>
+
+                <div>
+                    <label>
+                        PASSWORD
+                        <input type="password" minlength=8 required>
+                    </label>
+                    <label>
+                        CONFIRM PASSWORD
+                        <input type="password" minlength=8 required>
+                    </label>
+                </div>
             </form>
 
-            <p>Already have an account? <a href="">Log in</a></p>
+            <button form="signup-form">Create Account</button>
+
+            <p>Already have an account? <a href="" class="login-link"> Log in</a></p>
         </div>
 
     </div>
-
-    <script src="./script.js"></script>
 </body>
 </html>
